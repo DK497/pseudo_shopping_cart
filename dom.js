@@ -34,7 +34,7 @@ function comp(e){
     var val=e.target.value.toLowerCase();
     var lis=db.getElementsByTagName('li');
     
-    Array.from(lis).forEach((i)=>{
+    Array.from(lis).forEach((i)=>{  
         var k=i.firstChild.textContent.toLowerCase();
         if(k.indexOf(val)!=-1)
             i.style.display='block';
